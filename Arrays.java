@@ -38,5 +38,10 @@ class Main3{
          * For double and float, by default it is 0.0
          * For String, it is null
          */
+        arr[0]=1;
+        arr[1]=2;
+        arr[2] = 3;
+        System.out.println(Arrays.toString(arr));
+        System.out.println(arr.length); //To find length of an array
     }
 }
