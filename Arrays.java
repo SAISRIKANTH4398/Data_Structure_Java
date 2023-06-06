@@ -6,7 +6,10 @@
  //Declaration does not create an array but it tells the compiler that an array will hold a particular data type.
 
  //datatype[] arrayName = {value1, value2,..}  Creating and initializing
- class Main {
+
+import java.util.Arrays;
+
+class Main {
     public static void main(String[] args) {
         int[] arr = {60, 25, 20, 15, 30};
         // declaring, creating and initializing in a single statement
@@ -20,5 +23,8 @@ class Main2 {
         System.out.println(arr[0]); //Accessing elements. Index starts from 0 and goes until length-1
         System.out.println(arr[1]);
         System.out.println(arr[4]);
+        System.out.println(Arrays.toString(arr)); // Syntax to print an array
+        arr[0] = 53;         //To modify the elements in an array
+        System.out.println(Arrays.toString(arr)); 
     }
 }
