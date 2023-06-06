@@ -13,6 +13,7 @@ class Main {
     public static void main(String[] args) {
         int[] arr = {60, 25, 20, 15, 30};
         // declaring, creating and initializing in a single statement
+        System.out.println(Arrays.toString(arr));
     }
 }
 
@@ -26,5 +27,16 @@ class Main2 {
         System.out.println(Arrays.toString(arr)); // Syntax to print an array
         arr[0] = 53;         //To modify the elements in an array
         System.out.println(Arrays.toString(arr)); 
+    }
+}
+
+class Main3{
+    public static void main(String[] args){
+        int[] arr = new int[3];  //By this method, we can create an array of required length and assign values later
+        /*In the above code, allocates memory for 3 int values.
+         * After creating an array, by default 0 is assigned for byte, short, int or long type of array
+         * For double and float, by default it is 0.0
+         * For String, it is null
+         */
     }
 }
