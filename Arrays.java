@@ -8,6 +8,7 @@
  //datatype[] arrayName = {value1, value2,..}  Creating and initializing
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
@@ -56,5 +57,20 @@ class Iterating1{
         for(int i: arr){           //Iterating an array using for-each loop.
             System.out.println(i);  
         }
+    }
+}
+
+
+//Java Program to take user input and store values in an array
+class ReadingIO{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int[] arr = new int[N];
+        for(int i=0;i<N;i++){
+            arr[i] = sc.nextInt();
+        }
+        System.out.println(Arrays.toString(arr));
+        sc.close();
     }
 }
