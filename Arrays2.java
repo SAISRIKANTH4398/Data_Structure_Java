@@ -18,3 +18,17 @@ class ArrConcatenation {
         System.out.println(Arrays.toString(concatedArr));
     }
 }
+
+
+/*Array Slicing
+ * Syntax:- Arrays.copyOfRange(arr,startIndex, endIndex)
+ * Does not include end index
+ */
+
+class Slicing{
+    public static void main(String[] args){
+        int[] arr = {1,2,5,3,6,7,3};
+        int[] slicedArray = Arrays.copyOfRange(arr, 3, 6);
+        System.out.println(Arrays.toString(slicedArray));
+    }
+}
