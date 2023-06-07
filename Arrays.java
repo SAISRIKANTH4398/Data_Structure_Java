@@ -45,3 +45,16 @@ class Main3{
         System.out.println(arr.length); //To find length of an array
     }
 }
+
+class Iterating1{
+    public static void main(String[] args){
+        int[] arr = {1,4,6,7};
+        int n = arr.length;
+        for(int i=0;i<n;i++){            //Iterating an array using for loop.
+            System.out.println(arr[i]);
+        }
+        for(int i: arr){           //Iterating an array using for-each loop.
+            System.out.println(i);  
+        }
+    }
+}
