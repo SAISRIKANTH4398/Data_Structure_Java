@@ -1,3 +1,4 @@
+import java.util.*;
 /*
  * {
  * {1,2,3},
@@ -7,9 +8,6 @@
  * This is an example of 2D array with 3 rows and 3 columns so total 9 elements.
  * Declaration:- datatype[][] arrName
  */
-
-import java.util.Arrays;
-
 class Main{
     public static void main(String[] args){
         int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
@@ -27,4 +25,21 @@ class Main{
            }
        }
     }
+}
+
+class Main2{
+    Scanner input = new Scanner(System.in);
+
+        int rows = input.nextInt();  // reads the number of rows.
+        int cols = input.nextInt();  // reads the number of columns.
+
+        int[][] arr = new int[rows][cols];   // creating a two-dimensional arrray
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                arr[i][j] = input.nextInt();   // reading and storing user inputs in array
+           }
+       }
+
+        System.out.println(Arrays.deepToString(arr));
 }
