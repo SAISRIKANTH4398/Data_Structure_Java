@@ -17,7 +17,14 @@ class Main{
         System.out.println(Arrays.deepToString(arr)); //To print multi-dimensional array
         int[][] arr2 = new int[3][3]; //Creating array with new keyboard
         arr2[0][0] = 12;
-        arr2[0][1] = 4;
+        arr2[0][1] = 4;    //To assign values
         System.out.println(Arrays.deepToString(arr2));
+        int rows = arr2.length;   //It counts the number of inner arrays
+        int coulmn = arr[0].length;  //It counts the num of elements in an inner array
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < coulmn; j++) {
+                System.out.println("arr[" + i +"][" + j + "]: " + arr[i][j]); //To access each and every element in an array
+           }
+       }
     }
 }
