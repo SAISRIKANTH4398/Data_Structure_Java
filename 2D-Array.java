@@ -28,6 +28,7 @@ class Main{
 }
 
 class Main2{
+    public static void main(String[] args){
     Scanner input = new Scanner(System.in);
 
         int rows = input.nextInt();  // reads the number of rows.
@@ -42,4 +43,6 @@ class Main2{
        }
 
         System.out.println(Arrays.deepToString(arr));
+        input.close();
+}
 }
