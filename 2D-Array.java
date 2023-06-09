@@ -46,3 +46,20 @@ class Main2{
         input.close();
 }
 }
+
+/*Program to reverse an array of strings that are taken from user */
+class Main3{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        String[] arr = new String[N+1];
+        for(int i=0;i<=N;i++){
+            String a = sc.nextLine();     //Storing inputs in an array
+            arr[i] = a;
+        }
+        for(int i=arr.length-1;i>=0;i-=1){    //Printing elements in reverse order using for loop
+            System.out.println(arr[i]);
+        }
+        sc.close();
+    }
+}
