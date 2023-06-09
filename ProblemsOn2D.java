@@ -55,3 +55,25 @@ class replaceValue{
         sc.close();
     }
 }
+
+/*Program to find principal diagonal elements for an MxN matrix */
+class principalDiagonal{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int M = sc.nextInt();
+        int N = sc.nextInt();
+        int[][] arr = new int[M][N];
+        int lesser = M>N?N:M;
+        int[] arr1 = new int[lesser];   //Condition check for square and rectangle matrix
+        for(int i=0; i<M; i++){
+            for(int j=0;j<N;j++){
+                arr[i][j] = sc.nextInt();
+                if(i==j){
+                    arr1[i] = arr[i][j];
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr1));
+        sc.close();
+    }
+}
