@@ -63,3 +63,25 @@ class Main3{
         sc.close();
     }
 }
+
+/*Program to find a transpose of a matrix for MxN Matrix */
+class TransposeMatrix{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int M = sc.nextInt();
+        int N = sc.nextInt();
+        int[][] arr1 = new int[M][N];
+        for(int i=0;i<M;i++){
+            for(int j=0;j<N;j++){
+                arr1[i][j] = sc.nextInt();
+            }
+        }
+        for(int i=0;i<N;i++){           //Interchanging M and N so that rows and columns interchange.
+            for(int j=0;j<M;j++){
+                System.out.print(arr1[j][i]+" ");
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+}
