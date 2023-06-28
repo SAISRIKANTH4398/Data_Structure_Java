@@ -19,3 +19,29 @@ class Main {
         System.out.println(players);
     }
 }
+
+/*As ArrayLists accept only Objects. To add Primitive Data types, we have Wrapper classes in Java
+ * _____________________________________
+ * Primitive       |     Wrapper       |
+ * -------------------------------------
+ * boolean         |     Boolean       |
+ * byte            |     Byte          |
+ * boolean	       |     Boolean       |
+   char	           |     Character     |
+   double	       |     Double        |
+   float	       |     Float         |
+   int	           |     Integer       |
+   long	           |     Long          |
+   short	       |     Short         |
+ */
+class AddPrimitiveToArrayLists{
+    public static void main(String[] args) {
+        ArrayList<Integer> points = new ArrayList<>();
+
+        points.add(56);
+        points.add(75);
+        points.add(84);
+
+        System.out.println(points);
+    }
+}
