@@ -26,13 +26,12 @@ class Main {
  * -------------------------------------
  * boolean         |     Boolean       |
  * byte            |     Byte          |
- * boolean	       |     Boolean       |
    char	           |     Character     |
-   double	       |     Double        |
-   float	       |     Float         |
-   int	           |     Integer       |
+   double          |     Double        |
+   float           |     Float         |
+   int             |     Integer       |
    long	           |     Long          |
-   short	       |     Short         |
+   short           |     Short         |
  */
 class AddPrimitiveToArrayLists{
     public static void main(String[] args) {
