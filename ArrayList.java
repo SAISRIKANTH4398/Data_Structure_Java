@@ -13,5 +13,9 @@ class Main {
 
         players.add(0, "Bryant");  //Syntax to add element to ArrayList
         players.add("Wade"); // adding element without providing index
+        System.out.println(players.get(1));  // To access an element.
+        System.out.println(players); //To print an ArrayList
+        players.set(1, "Dhoni");  //To update an ArrayLists
+        System.out.println(players);
     }
 }
