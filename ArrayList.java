@@ -44,3 +44,20 @@ class AddPrimitiveToArrayLists{
         System.out.println(points);
     }
 }
+
+/*Auto Boxing and Unboxing
+ * Auto Boxing: Java compiler converts primitive data type to its corresponding wrapper class automatically
+ * int -> Integer, double -> Double
+ * Unboxing: Conversion of wrapper class to its corresponding primitve types.
+ * Integer -> int ..
+ */
+class AutoBoxingAndUnboxing {
+    public static void main(String[] args) {
+        int number = 44;
+        Integer numberObj = number;
+        Integer numObj = 23;
+        int num = numObj; // unboxing
+        System.out.println(numberObj);
+        System.out.println(num);
+    }
+}
