@@ -60,7 +60,7 @@ class AutoBoxingAndUnboxing {
     public static void main(String[] args) {
         int number = 44;
         Integer numberObj = number;
-        Integer numObj = 23;
+        Integer numObj = 23;  //AutoBoxing
         int num = numObj; // unboxing
         System.out.println(numberObj);
         System.out.println(num);
