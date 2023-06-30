@@ -10,7 +10,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-class Main {
+class Main1 {
     public static void main(String[] args) {
         int[] arr = {60, 25, 20, 15, 30};
         // declaring, creating and initializing in a single statement

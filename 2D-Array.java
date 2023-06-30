@@ -8,7 +8,7 @@ import java.util.*;
  * This is an example of 2D array with 3 rows and 3 columns so total 9 elements.
  * Declaration:- datatype[][] arrName
  */
-class Main{
+class Main4{
     public static void main(String[] args){
         int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
         System.out.println(arr[1][2]);
@@ -27,7 +27,7 @@ class Main{
     }
 }
 
-class Main2{
+class Main5{
     public static void main(String[] args){
     Scanner input = new Scanner(System.in);
 
@@ -48,7 +48,7 @@ class Main2{
 }
 
 /*Program to reverse an array of strings that are taken from user */
-class Main3{
+class Main6{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
