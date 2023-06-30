@@ -32,6 +32,10 @@ class Main9 {
 
         System.out.println("sportsArrList: " + sportsArrList); // [Basketball", "Cricket", "Football]
         System.out.println("Type of sportsArrList: " + sportsArrList.getClass().getSimpleName());
+        String[] sportsArr2 = new String[sportsArrList.size()];
+        sportsArrList.toArray(sportsArr2);     //Method to convert Array List to an array
+        System.out.println(Arrays.toString(sportsArr2));  
+        System.out.println(sportsArr2.getClass().getSimpleName());
 
     }
 }
