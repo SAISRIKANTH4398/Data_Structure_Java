@@ -7,7 +7,7 @@
 
  import java.util.ArrayList;
 
-class Main {
+class Main7 {
     public static void main(String[] args) {
         ArrayList<String> players = new ArrayList<>();
 

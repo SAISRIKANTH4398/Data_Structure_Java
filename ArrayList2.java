@@ -1,6 +1,6 @@
-import java.util.ArrayList;
+import java.util.*;
 
-class Main {
+class Main8 {
     public static void main(String[] args) {
         ArrayList<Integer> arrList1 = new ArrayList<>();
         arrList1.add(5);
@@ -18,5 +18,20 @@ class Main {
         ArrayList<Integer> subArrList = new ArrayList<Integer>(arrList1.subList(1,3)); //ArrayList Slicing
         System.out.println(subArrList);
         System.out.println("arrList1 after concatenation: " + arrList1); // [5, 10, 15, 20, 25, 30, 35, 40]
+    }
+}
+
+
+class Main9 {
+    public static void main(String[] args) {
+        String[] sportsArr = {"Basketball", "Cricket", "Football"};
+
+        System.out.println("Type of sportsArr: " + sportsArr.getClass().getSimpleName());
+
+        ArrayList<String> sportsArrList = new ArrayList<>(Arrays.asList(sportsArr)); // converting Array to ArrayList
+
+        System.out.println("sportsArrList: " + sportsArrList); // [Basketball", "Cricket", "Football]
+        System.out.println("Type of sportsArrList: " + sportsArrList.getClass().getSimpleName());
+
     }
 }
