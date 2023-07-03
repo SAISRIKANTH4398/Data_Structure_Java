@@ -39,3 +39,31 @@ class Main9 {
 
     }
 }
+
+
+/*Java program to add an element to an array such that array should be sorted and
+ print the array, position of newly added element*/
+ 
+class Main10{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int K = sc.nextInt();
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        for(int i=0;i<N;i++){
+            arr.add(sc.nextInt());
+        }
+        for(int j=0;j<N;j++){
+            if(arr.get(j)>K){
+                arr.add(j,K);
+                System.out.println(j);
+                break;
+            }else if(arr.get(j)==K){
+                System.out.println(0);
+                break;
+            }
+        }
+        System.out.println(arr);
+        sc.close();
+    }
+}
