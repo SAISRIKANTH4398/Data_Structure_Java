@@ -32,7 +32,7 @@ class Main11{
     }
 }
 
-
+/* Java program to find the max, min and sum of each row in a given MxN matrix */
 class Main12{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
