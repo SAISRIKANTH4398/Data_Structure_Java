@@ -69,3 +69,29 @@ class Main12{
         sc.close();
     }
 }
+
+
+class Main13{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        ArrayList<Integer> arrList = new ArrayList<Integer>();
+        arrList.add(1);
+        arrList.add(6);
+        arrList.add(32);
+        arrList.add(93);
+        arrList.add(71);
+        arrList.add(-20);
+        arrList.add(30);
+        arrList.add(-90);
+        arrList.add(50);
+        ArrayList<Integer> resultArr = new ArrayList<Integer>();
+        for(int i:arrList){
+            if(i>N){
+                resultArr.add(i);
+            }
+        }
+        System.out.println(resultArr);
+        sc.close();
+    }
+}
