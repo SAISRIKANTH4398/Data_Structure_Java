@@ -70,7 +70,9 @@ class Main12{
     }
 }
 
-
+/*Define array [1,6,32,93,71,-20,30,-90,50]. 
+ * program to create an arraylist with all the elements in the existing array that are greater than N
+ */
 class Main13{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
