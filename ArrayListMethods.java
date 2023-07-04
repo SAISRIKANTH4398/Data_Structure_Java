@@ -7,6 +7,9 @@ import java.util.*;
  * Collections.frequency() -> this method is used to find the frequency with which an element occurs in an arraylist.
  * Syntax: Collections.frequency(arr, obj)
  * 
+ * Collections.sort(). It can be used for Ascending and Descending sort.
+ * By default, this method is for ascending sort -> Collections.sort(arr);
+ * For descending sort, Collections.sort(arrList, Collections.reverseOrder());
  */
 class arrayListMethods {
         public static void main(String[] args) {
@@ -21,5 +24,9 @@ class arrayListMethods {
         int frequency = Collections.frequency(arrList, (Integer)2); //finding frequency of 2
         System.out.println(frequency);
         System.out.println(index);
+        Collections.sort(arrList); //Sorting in Ascending order
+        System.out.println(arrList);
+        Collections.sort(arrList, Collections.reverseOrder());  //Sorting in Descending order
+        System.out.println(arrList);
     }
 }
