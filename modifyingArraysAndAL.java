@@ -22,3 +22,24 @@ class modifyingArraysAndAL1 {
         System.out.println(arrList2);  //[34, 100, 19,76]
     }
 }
+
+class modifyingArraysAndAL2 {
+    /*In this case, arr3 is referring to an array and arr2 is referring to a new array */
+    public static void main(String[] args) {
+        int[] arr3 = {34, 45, 19, 21};
+        int[] arr4 = arr3;
+        arr4 = new int[4];
+        System.out.println(Arrays.toString(arr3)); //[34, 45, 19, 21]
+        System.out.println(Arrays.toString(arr4)); //[0, 0, 0, 0]
+
+        ArrayList<Integer> arrList1  = new ArrayList<>();
+        arrList1.add(34);
+        arrList1.add(45);
+        arrList1.add(19);
+        arrList1.add(21);
+        ArrayList<Integer> arrList2 = arrList1; 
+        arrList2 = new ArrayList<>();  //Though arrList2 is referring to arrList1, arrList2 is referring to new AL
+        System.out.println(arrList1);
+        System.out.println(arrList2);
+    }
+}
