@@ -39,7 +39,7 @@ class modifyingArraysAndAL2 {
         arrList1.add(21);
         ArrayList<Integer> arrList2 = arrList1; 
         arrList2 = new ArrayList<>();  //Though arrList2 is referring to arrList1, arrList2 is referring to new AL
-        System.out.println(arrList1);
-        System.out.println(arrList2);
+        System.out.println(arrList1);  //[34, 45, 19, 21]
+        System.out.println(arrList2);  //[]
     }
 }
