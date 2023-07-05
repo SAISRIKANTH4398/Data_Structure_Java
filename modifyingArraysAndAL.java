@@ -1,6 +1,7 @@
 import java.util.*;
 
 class modifyingArraysAndAL1 {
+    /*In this case, both arr1 and arr2  are referring to one array, so if any changes, both the arrays get impacted. */
     public static void main(String[] args) {
         int[] arr1 = {34, 45, 19, 21};
         int[] arr2 = arr1;   //arr2 is assigned with arr1.
