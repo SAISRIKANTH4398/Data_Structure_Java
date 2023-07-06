@@ -68,7 +68,7 @@ class modifyingArraysAndAL3{
 }
 
 
-/*Updating mutable objects will affect the elements in an array */
+/*Updating mutable objects affect the elements in an array */
 class modifyingArraysAndAL4{
     public static void main(String[] args) {
         int[] arr1 = {34, 45, 19, 21};
