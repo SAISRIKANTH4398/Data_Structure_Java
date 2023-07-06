@@ -55,5 +55,14 @@ class modifyingArraysAndAL3{
         name = "John Martin";
         System.out.println(Arrays.toString(namesArr));  //[John, Smith, Mike]
         //Even the variable name has changed, it does n't impact the namesArr
+
+        ArrayList<String> arrList1  = new ArrayList<>();
+        String word = "John";
+        arrList1.add(word);
+        arrList1.add("Smith");
+        arrList1.add("Mike");
+        System.out.println(arrList1);   //[John, Smith, Mike]
+        word = "John Martin";
+        System.out.println(arrList1);   //[John, Smith, Mike]
     }
 }
