@@ -66,3 +66,17 @@ class modifyingArraysAndAL3{
         System.out.println(arrList1);   //[John, Smith, Mike]
     }
 }
+
+
+/*Updating mutable objects will affect the elements in an array */
+class modifyingArraysAndAL4{
+    public static void main(String[] args) {
+        int[] arr1 = {34, 45, 19, 21};
+        int[] arr2 = {42, 152, 737, 2, 79};
+        int[][] arr3 = {arr1, arr2};
+        System.out.println(Arrays.deepToString(arr3)); //[[34, 45, 19, 21], [42, 152, 737, 2, 79]]
+        arr1[1] = 65;
+        arr2[4] = 41;
+        System.out.println(Arrays.deepToString(arr3)); //[[34, 65, 19, 21], [42, 152, 737, 2, 41]]
+    }
+}
