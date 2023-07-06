@@ -44,3 +44,16 @@ class modifyingArraysAndAL2 {
         System.out.println(arrList2);  //[]
     }
 }
+
+/*Updating immutable objects do not affect the values in an array. */
+
+class modifyingArraysAndAL3{
+    public static void main(String[] args) {
+        String name = "John";
+        String[] namesArr = {name, "Smith", "Mike"};
+        System.out.println(Arrays.toString(namesArr));  //[John, Smith, Mike]
+        name = "John Martin";
+        System.out.println(Arrays.toString(namesArr));  //[John, Smith, Mike]
+        //Even the variable name has changed, it does n't impact the namesArr
+    }
+}
