@@ -32,7 +32,7 @@ class SplittingStrings {
         String[] messageArr = message.split("+"); //It throws an error because + is used to find one or more occurence 
         /*In order to split, we need to use escape characters i.e., \\ */
         messageArr = message.split("\\+");
-        System.out.println(Arrays.toString(messageArr));
+        System.out.println(Arrays.toString(messageArr));//["See", "you", "soon"]
         
     }
  }
