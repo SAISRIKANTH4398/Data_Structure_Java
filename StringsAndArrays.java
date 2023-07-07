@@ -27,7 +27,12 @@ class SplittingStrings {
         /*The Regex pattern [.-.] accepts any one of the characters in the range, and 
         the + character means to find one or more occurrences of the given character or a regex pattern. */
         System.out.println(Arrays.toString(stringArr)); //[One, Two, Three, Four].
-
+        
+        String message = "See+you+soon";
+        String[] messageArr = message.split("+"); //It throws an error because + is used to find one or more occurence 
+        /*In order to split, we need to use escape characters i.e., \\ */
+        messageArr = message.split("\\+");
+        System.out.println(Arrays.toString(messageArr));
         
     }
  }
