@@ -17,5 +17,11 @@ class Main14 {
         System.out.println(isAdded);
         isAdded = players.add("Virat");
         System.out.println(isAdded);
+
+        //Syntax to remove an element. If element exists in Hashset, it returns true, else false
+        System.out.println(players.remove("Rohit"));  
+        System.out.println(players.remove("Sachin"));
+        System.out.println(players);
+
     }
 }
