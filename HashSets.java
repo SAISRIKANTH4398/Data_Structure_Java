@@ -27,5 +27,7 @@ class Main14 {
         boolean isPresent = players.contains("Dhoni"); //if element is  present in hashset or not. returns true or false.
         System.out.println(isPresent);
 
+        System.out.println(players.size()); //returns the length of a hashset.
+
     }
 }
