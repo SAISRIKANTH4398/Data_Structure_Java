@@ -11,7 +11,11 @@ class Main14 {
     public static void main(String[] args) {
         HashSet<String> players = new HashSet<>();
         players.add("Rohit");
-        players.add("Virat");
+        boolean isAdded = players.add("Virat");
         players.add("Dhoni");  //To add an element to a HashSet.
+        System.out.println(players);   //To print a Hashset
+        System.out.println(isAdded);
+        isAdded = players.add("Virat");
+        System.out.println(isAdded);
     }
 }
