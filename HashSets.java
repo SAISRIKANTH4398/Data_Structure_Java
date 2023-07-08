@@ -23,5 +23,9 @@ class Main14 {
         System.out.println(players.remove("Sachin"));
         System.out.println(players);
 
+        //players.clear() method removes all the elements in a HashSet.
+        boolean isPresent = players.contains("Dhoni"); //if element is  present in hashset or not. returns true or false.
+        System.out.println(isPresent);
+
     }
 }
