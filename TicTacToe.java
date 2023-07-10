@@ -24,8 +24,11 @@ class TicTacToe{
                 board[row][col] = player;
                 isGameOver = hasWon(board, player);
                 if(isGameOver){
+
                     System.out.println("Player "+player+"has won");
+
                 }else if(!hasWon(board, player) && isBoardFull(board)){
+                    
                 System.out.println("Game drawn!!");
                 playerBoard(board);
                 break;
