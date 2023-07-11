@@ -31,3 +31,21 @@ class Main14 {
 
     }
 }
+
+class hsetOps{
+    /*Union Operator:- addAll() method performs the union of two sets. */
+    public static void main(String[] args) {
+        HashSet<Integer> hset1 = new HashSet<>();
+        HashSet<Integer> hset2 = new HashSet<>();
+        hset1.add(3);
+        hset1.add(32);
+        hset1.add(8);
+        hset2.add(8);
+        hset2.add(32);
+        hset2.add(30);
+        System.out.println("hset1: " + hset1);
+        System.out.println("hset2: " + hset2);
+        hset1.addAll(hset2); // union of hset1 and hset2
+        System.out.println("\nhset1 after Union:  " + hset1);
+    }
+}
