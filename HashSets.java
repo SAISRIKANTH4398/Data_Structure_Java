@@ -46,6 +46,8 @@ class hsetOps{
         System.out.println("hset1: " + hset1);
         System.out.println("hset2: " + hset2);
         hset1.addAll(hset2); // union of hset1 and hset2
+        // hset1.retainAll(hset2); //Intersection of hset1 and hset2
+        //hset1.removeAll(hset2); //To find difference between 2 hashsets.
         System.out.println("\nhset1 after Union:  " + hset1);
     }
 }
